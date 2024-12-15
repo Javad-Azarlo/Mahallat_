@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+  width: 45%;
+  /* box-shadow: 5px 5px 20px #cbced1, -6px -2px 20px #cbced1; */
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+}

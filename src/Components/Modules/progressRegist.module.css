@@ -1,0 +1,128 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+
+
+:root {
+  --color: oklch(86.63% 0.25 148.01);
+  --line-border-empty: oklch(76.63% 0.25 148.01);
+  --text-empty: oklch(71.63% 0.25 148.01);
+  --line-border-fill: oklch(64.29% 0.26 360);
+  --text-fill: oklch(46.63% 0.25 148.01);
+}
+
+
+
+.progresscontainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: auto;
+  margin-top: 50px;
+}
+
+.progresscontainer::before {
+  content: "";
+  /* background-color: var(--line-border-empty); */
+  background: #647388;
+  position: absolute;
+  top: 18px;
+  /* left: 20px; */
+  transform: translateY(-50%);
+  height: 2px;
+  width: 85%;
+  opacity: 0.6;
+  /* z-index: -1; */
+}
+
+.progress {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  transform: translateY(-50%);
+  height: 4px;
+  max-width: 80%;
+  width: 0%;
+  z-index: -1;
+  transition: 400ms ease;
+}
+
+.textwrap {
+  display: inline-block;
+  text-align: center;
+  /* width: 75px; */
+  cursor: pointer;
+}
+
+.textwrap p {
+  font-weight: 400;
+  font-size: 12px;
+  /* color: var(--text-empty); */
+  color: #647388;
+  margin-top: 10px;
+}
+
+.textwrap.active p {
+  font-weight: 500;
+  /* color: var(--text-fill); */
+  color: #ca8a04;
+  transition: 400ms ease;
+}
+
+.circle {
+  /* background-color: var(--color); */
+  background: #fff;
+  /* border: 3px solid var(--line-border-empty); */
+  /* color: var(--text-empty); */
+  color: #647388;
+  font-weight: 600;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  position: relative; /* Position the child element */
+  /* left: 20px;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 400ms ease;
+  box-shadow: 1px 1px 3px rgba(03, 03, 03, 0.2);
+  font-size: 14px;
+}
+
+.textwrap.active div.circle {
+  border-color: var(--line-border-fill);
+  color: var(--text-fill);
+  box-shadow: 0 0 0 7.5px rgb(201, 137, 3, 0.2);
+}
+.circle img {
+  width: inherit;
+}
+.btn {
+  background-color: var(--line-border-fill);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 10px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+  color: var(--color);
+  transform: none;
+}

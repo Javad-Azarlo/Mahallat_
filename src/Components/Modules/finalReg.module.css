@@ -1,0 +1,69 @@
+.btnClic {
+  background: #fff !important;
+  color: black !important;
+  border: 2px solid rgb(6, 95, 70) !important;
+}
+fieldset {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+fieldset legend {
+  font-size: 12px;
+  opacity: 0.6;
+}
+fieldset legend span {
+  color: red;
+}
+fieldset input {
+  width: 100%;
+}
+
+fieldset:focus-visible {
+  border: 1px solid rgb(6, 95, 70) !important;
+  outline-style: none;
+}
+.container label {
+  font-size: 12px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 0 5px;
+  border-radius: 2px;
+}
+
+.accept {
+  opacity: 1;
+}
+.notAccept {
+  opacity: 0.5;
+  cursor: none !important;
+}
+.fieldset {
+  margin-bottom: 10px;
+}
+.fieldset input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: unset;
+  padding: 1%;
+}
+.image {
+  width: 100%;
+  position: relative;
+}
+.ab {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: auto;
+  left: 0;
+  padding-left: 5%;
+  cursor: pointer;
+}

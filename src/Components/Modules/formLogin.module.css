@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  /* inset: 0; */
+  margin: 20px auto;
+  width: 80%;
+  row-gap: 10px;
+}
+
+.fieldset {
+  margin-bottom: 10px;
+}
+.fieldset input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: unset;
+  padding: 1%;
+}
+.container h3 {
+  margin-bottom: 20px;
+}
+
+
+fieldset:focus-visible {
+  border: 1px solid rgb(6, 95, 70) !important;
+  outline-style: none;
+}
+.container label {
+  font-size: 12px;
+}
+.image {
+  width: 100%;
+  position: relative;
+}
+.ab {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: auto;
+  left: 0;
+  padding-left: 5%;
+  cursor: pointer;
+}
+.input {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 0 5px;
+  border-radius: 2px;
+}
+.captcha {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.captcha p {
+  height: 47px;
+  background-color: #131111;
+  margin-top: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.captcha input {
+  width: 100%;
+}
+.btnLogin {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
+  justify-content: space-around;
+}
+.btnLogin input[type="button"] {
+  background: rgb(6, 95, 70);
+  height: 40px;
+  border-radius: 6px;
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+  color: #fff;
+}
+.positionrelative {
+  position: relative !important;
+}
+.labeltext {
+  position: relative;
+  width: 100%;
+}

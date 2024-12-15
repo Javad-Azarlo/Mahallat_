@@ -1,0 +1,14 @@
+.container {
+  background-color: white;
+  width: 60%;
+  height: 540px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* position: relative; */
+}
+@media screen and (max-width: 980px) {
+    .container {
+      width: 100%;
+  
+    }
+  }

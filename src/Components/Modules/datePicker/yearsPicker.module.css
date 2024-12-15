@@ -1,0 +1,27 @@
+.yearsHead , .yearsBody {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5px;
+  /* overflow: auto; */
+}
+.yearsHead span , .yearsBody span {
+  margin-bottom: 5px;
+  border-radius: 15px;
+  /* border: 1px solid #eee; */
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+.yearsBody span:hover{
+  background-color: rgb(201, 137, 3);
+  color: #fff;
+  transition: all 0.5s;
+}
+.yearsHead span img:hover , .yearsBody span img:hover {
+  border: 1px solid black; 
+  border-radius: 50%; 
+  }

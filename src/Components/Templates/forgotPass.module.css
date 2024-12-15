@@ -1,0 +1,41 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 80%;
+  row-gap: 10px;
+   
+}
+.container h3 {
+  margin-bottom: 20px;
+}
+.btnType {
+    display: flex;
+    column-gap: 3%;
+  }
+  .btnType input {
+    width: 50%;
+  }
+  .btnClic {
+    background: #fff !important;
+    color: black !important;
+    border: 2px solid rgb(6, 95, 70) !important;
+  }
+  .frmrecovery{
+    margin-top: 7%;
+  }
+  .accept {
+    opacity: 1;
+  }
+  .notAccept {
+    opacity: 0.5;
+    cursor: none !important;
+  }
+  .login {
+    margin-top: 20px;
+    color: rgb(100, 116, 139);
+    font-size: 13px;
+  }
+  .login a {
+    color: #05b4d2;
+  }

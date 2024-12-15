@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+  width: 45%;
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+  .palletClr{
+    top: 0;
+  }
+}
+.palletClr {
+  position: absolute;
+  width: 100%;
+}
+.palletClr div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgba(255, 255 , 255 , 0.5);
+  box-shadow: 0 0px 0px 0 rgb(0, 0, 0), 0 0px 6px 0 rgba(0, 0, 0, 0.19);
+  height: 40px;
+  align-items: center;
+}
+.palletClr img{
+  width: 25px;
+  margin: 5px;
+}
+.palletClr div span{
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.palletClr p{
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  top: 0;
+}
+.children {
+  background-color: white;
+  width: 60%;
+  min-height: 540px;
+  height: auto;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 1.5rem;
+}
+@media screen and (max-width: 980px) {
+  .children {
+    width: 100%;
+  }
+}
